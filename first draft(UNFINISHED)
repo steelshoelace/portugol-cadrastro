@@ -1,0 +1,46 @@
+inicio 
+    // declaracao da variavel
+    texto email[50]
+    texto senha[50]
+    inteiro opcao, f, d, repetir
+    
+    //programa
+    repetir <- 1
+    f <- 0
+    enquanto repetir = 1 faz
+    escrever "\n", "======menu chibata======", "\n"
+    escrever "1} - CADASTRAR", "\n"
+    escrever "2} - LISTAR", "\n"
+    escrever "3} - EXCLUIR", "\n"
+    escrever "4} - SAIR" ,"\n"
+    ler opcao
+    escolhe opcao
+      caso 1: 
+         //registrar o email
+          escrever "_________", "\n"
+          escrever "coloque o email do caba"
+          ler email[f]
+          escrever "senha do homen"
+          ler senha[f]
+          escrever email[f]
+          f <- f + 1
+      caso 2:
+         //listar os usuarios
+      para f de 0 ate 49 passo 1
+      escrever "email: ", email[f], "\n"
+      escrever "senha: ", senha[f], "\n"
+      escrever "------------", "\n"
+      se email[f] = "" entao
+      f <- 50
+      fimse
+      proximo
+      caso 3:
+          //excluir um usuario
+      caso 4:
+         repetir <- 1970
+         escrever "adieu"  
+       defeito:
+          escrever "nao e uma opcao valida"
+      fimescolhe 
+   fimenquanto
+fim
