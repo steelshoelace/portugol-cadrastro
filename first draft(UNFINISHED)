@@ -1,8 +1,11 @@
+    escolhe opcao
 inicio 
     // declaracao da variavel
-    texto email[50]
-    texto senha[50]
-    inteiro opcao, f, d, repetir
+    texto email[50], senha[50]
+    inteiro opcao, g, f, repetir
+    
+    //f - indice no vetor
+    //g - causa o loop do caso 2(listar)
     
     //programa
     repetir <- 1
@@ -18,26 +21,34 @@ inicio
       caso 1: 
          //registrar o email
           escrever "_________", "\n"
-          escrever "coloque o email do caba"
+          escrever "coloque o email do caba", "\n"
           ler email[f]
-          escrever "senha do homen"
+          escrever "senha do homen", "\n"
           ler senha[f]
           escrever email[f]
           f <- f + 1
       caso 2:
-         //listar os usuarios
-      para f de 0 ate 49 passo 1
-      escrever "email: ", email[f], "\n"
-      escrever "senha: ", senha[f], "\n"
-      escrever "------------", "\n"
-      se email[f] = "" entao
-      f <- 50
+      //listar os usuarios
+      
+      se email[0] = "" entao
+      escrever "nao existem usuarios cadastrados"
       fimse
-      proximo
+      
+       se email[0] =/= "" entao
+          para g de 0 ate 49 passo 1
+              se email[g] = "" entao
+              g <- 49
+              fimse
+           escrever "email: ", email[g], "\n"
+           escrever "senha: ", senha[g], "\n"
+          proximo
+       fimse
       caso 3:
-          //excluir um usuario
+          //excluir um cadrastro
+        escrever "remover qual candidato"
+        
       caso 4:
-         repetir <- 1970
+         repetir <- 8
          escrever "adieu"  
        defeito:
           escrever "nao e uma opcao valida"
