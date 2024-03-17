@@ -63,7 +63,7 @@ inicio
                       t <- t - 1
                       escrever "\nFoi-se.\n"
                     senao
-                     escrever "\nNão há cadastros.\n"
+                     escrever "\nNão há cadastros nessa posição, para checar a posição, liste os cadastros no menu.\n"
                     fimse
                 senao
                  escrever "\nNão há cadastros para excluir.\n"
