@@ -2,7 +2,7 @@
 inicio
 //vou chorar
 //decl das variaveis
-   texto email[50], senha[50]
+   texto email[5], senha[5]
    inteiro opcao, f, t
    
 //f - indice dos vetores
@@ -27,7 +27,7 @@ inicio
         escolhe opcao
             caso 1: 
                 //registrar o cadastro
-                se t < 50 entao
+                se t < 5 entao
                     escrever "\nEmail para cadastrar: \n"
                     ler email[t]
                     escrever "Senha: \n"
@@ -89,7 +89,7 @@ inicio
                 
             caso 5:    
             
-             para f de 0 ate 49 passo 1
+             para f de 0 ate 4 passo 1
                 email[f] <- ""
                 senha[f] <- ""
              proximo
